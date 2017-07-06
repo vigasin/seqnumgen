@@ -1,0 +1,5 @@
+syntax: glob
+
+var
+env
+*.pyc

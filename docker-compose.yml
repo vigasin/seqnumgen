@@ -1,0 +1,10 @@
+version: '2'
+services:
+    web:
+        restart: always
+        build: .
+        command: python manage.py runserver 0.0.0.0:8000
+        volumes:
+            - ./var:/code/var
+        ports:
+            - "8007:8000"
